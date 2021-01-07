@@ -69,3 +69,24 @@ button:active {
   color: white;
   transition: all ease-in-out 0.3s;
 }
+
+.menu-headline {
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  font-size: 3em;
+}
+
+.food {
+  height: 500px;
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-caption {
+  background: linear-gradient(rgba(255, 255, 255, 0),  rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.93));
+  bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}

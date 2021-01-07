@@ -12,6 +12,8 @@ const home = document.querySelector('.home');
 const menu = document.querySelector('.menu');
 const contact = document.querySelector('.contact');
 
+const carousel = document.getElementById('carouselExampleCaptions');
+
 
 function reset() {
   content.innerHTML = '';
@@ -21,12 +23,14 @@ content.append(...mainPage());
 
 home.addEventListener('click', () => {
   reset();
+  carousel.classList.add('d-none');
   content.append(...mainPage());
 });
 
 menu.addEventListener('click', () => {
   reset();
-  content.append(...tabs.menu());
+  carousel.classList.remove('d-none');
+  content.append(tabs.menu(), carousel);
 });
 
 contact.addEventListener('click', () => {
