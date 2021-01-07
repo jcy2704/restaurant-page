@@ -1,0 +1,71 @@
+* {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+button:focus,
+button:active {
+  border: none;
+	background: none;
+  outline: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 25px;
+}
+
+.home,
+.menu,
+.contact {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+}
+
+.headline {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5em;
+  padding-top: 35vh;
+  font-family: 'Caveat', cursive;
+}
+
+.description {
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  background-color: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.521));
+  letter-spacing: 2px;
+}
+
+.main-btn,
+.main-btn:focus,
+.main-btn:active {
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+  margin: 10px 20px;
+  padding: 5px 35px;
+  text-transform: uppercase;
+  transition: background ease-in-out 0.5s, color ease-in-out 0.5s;
+  letter-spacing: 2px;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: white;
+  transition: all ease-in-out 0.3s;
+}

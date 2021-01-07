@@ -1,13 +1,35 @@
 export default function mainPage() {
+  const content = document.querySelector('#content');
+  const container = document.createElement('div');
+  const btnsContainer = document.createElement('div');
   const headline = document.createElement('h1');
-  const hero = document.createElement('img');
   const desc = document.createElement('p');
+  const menu = document.createElement('button');
+  const contact = document.createElement('button');
 
   headline.textContent = 'Full Restaurant';
 
-  hero.src = 'https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60';
+  headline.classList.add('headline');
 
-  desc.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nesciunt, a ratione laudantium harum adipisci amet mollitia provident quae voluptates, quis quidem exercitationem expedita officia iusto ad labore! Velit quae voluptates repudiandae debitis aliquam ex autem tenetur similique, eligendi error eveniet cumque ipsum ratione, itaque maiores saepe nulla quos harum. Iusto enim ducimus repellat. Debitis velit, labore maxime rerum ullam, nisi nobis aperiam vel sequi incidunt fugiat quam tenetur dicta, numquam ex error modi saepe animi. Voluptas, molestiae qui! Laborum similique molestiae inventore. Culpa placeat laudantium minus voluptate error quibusdam nesciunt mollitia aperiam obcaecati! Officiis maxime voluptas aperiam quis sed.';
+  content.style.height = '100vh';
+  content.style.background = 'linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.9)), url(../assets/restaurant.jpg) no-repeat center bottom';
+  content.style.backgroundSize = 'cover';
 
-  return [headline, hero, desc];
+  desc.classList.add('description');
+  desc.textContent = 'Place to fulfill your palate';
+
+  container.classList.add('w-75', 'mx-auto', 'text-center');
+
+  menu.classList.add('main-btn');
+  contact.classList.add('main-btn');
+
+  menu.textContent = 'Menu';
+  contact.textContent = 'Order';
+
+  btnsContainer.classList.add('d-flex', 'justify-content-center');
+  btnsContainer.append(menu, contact);
+
+  container.append(desc, btnsContainer);
+
+  return [headline, container];
 }
