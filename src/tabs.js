@@ -17,16 +17,23 @@ export function contact() {
   const headline = document.createElement('h1');
   const sub = document.createElement('p');
   const address = document.createElement('p');
+  const container = document.createElement('div');
 
   headline.textContent = 'Call Us';
   headline.className = 'order-headline';
 
+  sub.classList.add('sub');
+  address.classList.add('address');
+
   sub.textContent = '212-207-8996';
   address.textContent = '17 Berkshire Road Brooklyn, NY 11211';
+
+  container.classList.add('w-75', 'mx-auto', 'text-center');
+  container.append(sub, address);
 
   content.style.height = '100vh';
   content.style.background = 'linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.9)), url(../assets/waiter.jpg) no-repeat center top';
   content.style.backgroundSize = 'cover';
 
-  return [headline, sub, address];
+  return [headline, container];
 }

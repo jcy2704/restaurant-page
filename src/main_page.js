@@ -12,7 +12,7 @@ export default function mainPage() {
   headline.classList.add('headline');
 
   content.style.height = '100vh';
-  content.style.background = 'linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.9)), url(../assets/restaurant.jpg) no-repeat center bottom';
+  content.style.background = 'linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95)), url(../assets/restaurant.jpg) no-repeat center bottom';
   content.style.backgroundSize = 'cover';
 
   desc.classList.add('description');

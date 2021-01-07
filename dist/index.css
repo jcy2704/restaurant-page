@@ -90,3 +90,30 @@ button:active {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
 }
+
+.order-headline {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 6em;
+  padding-top: 35vh;
+  font-family: 'Caveat', cursive;
+  margin-bottom: 0;
+}
+
+.sub {
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.address {
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
