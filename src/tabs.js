@@ -6,7 +6,7 @@ export function menu() {
   headline.className = 'menu-headline';
 
   content.style.height = '100vh';
-  content.style.background = 'linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.9)), url(../assets/food.jpg) no-repeat center bottom';
+  content.style.background = 'linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95)), url(../assets/food.jpg) no-repeat center bottom';
   content.style.backgroundSize = 'cover';
 
   return headline;
@@ -32,7 +32,7 @@ export function contact() {
   container.append(sub, address);
 
   content.style.height = '100vh';
-  content.style.background = 'linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.9)), url(../assets/waiter.jpg) no-repeat center top';
+  content.style.background = 'linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95)), url(../assets/waiter.jpg) no-repeat center top';
   content.style.backgroundSize = 'cover';
 
   return [headline, container];

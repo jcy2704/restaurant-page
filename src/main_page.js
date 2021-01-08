@@ -1,3 +1,6 @@
+import reset from './reset';
+import * as tabs from './tabs';
+
 export default function mainPage() {
   const content = document.querySelector('#content');
   const container = document.createElement('div');
@@ -20,11 +23,24 @@ export default function mainPage() {
 
   container.classList.add('w-75', 'mx-auto', 'text-center');
 
-  menu.classList.add('main-btn');
-  contact.classList.add('main-btn');
+  menu.classList.add('menu-btn');
+  contact.classList.add('contact-btn');
 
   menu.textContent = 'Menu';
   contact.textContent = 'Order';
+
+  const carousel = document.getElementById('carouselExampleCaptions');
+
+  menu.addEventListener('click', () => {
+    reset();
+    carousel.style.display = 'block';
+    content.append(tabs.menu(), carousel);
+  });
+
+  contact.addEventListener('click', () => {
+    reset();
+    content.append(...tabs.contact(), carousel);
+  });
 
   btnsContainer.classList.add('d-flex', 'justify-content-center');
   btnsContainer.append(menu, contact);

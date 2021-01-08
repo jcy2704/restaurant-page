@@ -48,9 +48,9 @@ button:active {
   letter-spacing: 2px;
 }
 
-.main-btn,
-.main-btn:focus,
-.main-btn:active {
+.menu-btn,
+.menu-btn:focus,
+.menu-btn:active {
   font-size: 1.2em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -64,9 +64,31 @@ button:active {
   letter-spacing: 2px;
 }
 
-.main-btn:hover {
+.menu-btn:hover {
   background-color: transparent;
   color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.contact-btn,
+.contact-btn:focus,
+.contact-btn:active {
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  margin: 10px 20px;
+  padding: 5px 35px;
+  text-transform: uppercase;
+  transition: background ease-in-out 0.5s, color ease-in-out 0.5s;
+  letter-spacing: 2px;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: black;
   transition: all ease-in-out 0.3s;
 }
 
@@ -92,7 +114,6 @@ button:active {
 }
 
 .order-headline {
-  text-transform: uppercase;
   text-align: center;
   font-size: 6em;
   padding-top: 35vh;
@@ -116,4 +137,8 @@ button:active {
   word-spacing: 3px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+#carouselExampleCaptions {
+  display: none;
 }

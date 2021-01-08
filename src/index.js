@@ -1,6 +1,7 @@
-import mainPage from './main_page';
 import * as tabs from './tabs';
 import nav from './nav';
+import reset from './reset';
+import mainPage from './main_page';
 
 const content = document.createElement('div');
 content.setAttribute('id', 'content');
@@ -14,26 +15,24 @@ const contact = document.querySelector('.contact');
 
 const carousel = document.getElementById('carouselExampleCaptions');
 
-
-function reset() {
-  content.innerHTML = '';
-}
-
 content.append(...mainPage());
 
 home.addEventListener('click', () => {
+  const car = content.removeChild(carousel);
+  document.body.appendChild(car);
   reset();
-  carousel.classList.add('d-none');
+  carousel.style.display = 'none';
   content.append(...mainPage());
 });
 
 menu.addEventListener('click', () => {
   reset();
-  carousel.classList.remove('d-none');
+  carousel.style.display = 'block';
   content.append(tabs.menu(), carousel);
 });
 
 contact.addEventListener('click', () => {
   reset();
-  content.append(...tabs.contact());
+  carousel.style.display = 'none';
+  content.append(...tabs.contact(), carousel);
 });
