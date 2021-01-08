@@ -2,7 +2,7 @@
 
 # Restaurant
 
-A simple restaurant page with a single HTML file. Used JavaScript to render the different content that was typically in a restaurant page; the menu and the contact information. To be able to render and change the different content we used DOM to make the association with the HTML file.
+A simple and minimalistic restaurant page with a single HTML file. Used JavaScript to render the different content that was typically in a restaurant page; the menu and the contact information. To be able to render and change the different content we used DOM to make the association with the HTML file.
 
 The menu include 4 dishes, usually 1 for each time of the day; breakfast, lunch, dinner, and dessert.
 
@@ -15,7 +15,7 @@ The menu include 4 dishes, usually 1 for each time of the day; breakfast, lunch,
 
 ## Live Preview
 
-[Book Library](https://rawcdn.githack.com/jcy2704/restaurant-page/e0fbc1481aae6d0dfd28682a1cab4748d850a68a/dist/index.html)
+[Full Restaurant](https://rawcdn.githack.com/jcy2704/restaurant-page/e0fbc1481aae6d0dfd28682a1cab4748d850a68a/dist/index.html)
 
 ## Getting Started
 
