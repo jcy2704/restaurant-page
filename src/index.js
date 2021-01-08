@@ -3,8 +3,7 @@ import nav from './nav';
 import reset from './reset';
 import mainPage from './main_page';
 
-const content = document.createElement('div');
-content.setAttribute('id', 'content');
+const content = document.querySelector('#content');
 
 document.body.appendChild(nav());
 document.body.appendChild(content);
