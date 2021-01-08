@@ -42,6 +42,17 @@ To install dependencies you need to run the following command in your terminal.
 ### Usage
 Run live server extension in VSCode or run the index.html file from the cloned repository.
 
+If code edited, use these scripts to compile your work.
+
+**Build** to compile once your code.
+```
+    npm run build
+```
+
+**Watch** script to compile everytime you make a change, great combination with live server extension.
+```
+    npm run watch
+```
 
 ## Authors
 
