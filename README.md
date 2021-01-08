@@ -15,7 +15,7 @@ The menu include 4 dishes, usually 1 for each time of the day; breakfast, lunch,
 
 ## Live Preview
 
-[Full Restaurant](https://rawcdn.githack.com/jcy2704/restaurant-page/e0fbc1481aae6d0dfd28682a1cab4748d850a68a/dist/index.html)
+[Full Restaurant](https://rawcdn.githack.com/jcy2704/restaurant-page/6b20fa7b5d3580a0dd4ae9b57ae77582fef63df1/dist/index.html)
 
 ## Getting Started
 
